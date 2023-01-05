@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """ 0x00. Python - Variable Annotations """
+from typing import List
 
 
-def sum_mixed_list(mxd_lst: list[mixed]) -> float:
+def sum_mixed_list(mxd_lst: List[mixed]) -> float:
     """ Sum a list of floats and ints """
     sum = 0
     for i in mxd_lst:
