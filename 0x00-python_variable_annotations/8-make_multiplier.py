@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-""" 8. Complex types - functions """
+""" 0x00. Python - Variable Annotations """
+from typing import Callable
 
 
-def make_multiplier(multiplier: float) -> float:
-    """ 8. Complex types - functions """
-    def fun(num: float) -> float:
-        """ 8. Complex types - functions """
-        return num * multiplier
-    return fun
+def make_multiplier(multiplier: float) -> Callable[[float], float]:
+    """ Return a function"""
+    def fn(n: float):
+        return n * multiplier
+    return fn
